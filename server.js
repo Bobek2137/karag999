@@ -10,5 +10,13 @@ app.listen(PORT, function () {
     console.log("start serwera na porcie " + PORT)
 })
 app.get("/", function (req, res) {
-    res.send("<h1>zadanie domowe aplikacje klienckie </h1>")
+    res.send(dane)
 })
+
+const dane = {
+    imie: "Aleksander",
+    nazwisko: "karagiannakos",
+    klasa: "3i2",
+    grupa: "1",
+
+}
